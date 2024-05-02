@@ -21,7 +21,7 @@ public class TestProviderController {
 			this.mockMvc.perform(get("/providers")).andExpect(status().isOk())
 			.andExpect(content().string(containsString("Samsung")))
 			.andExpect(content().string(containsString("Orange")))
-			.andExpect(content().string(containsString("HP")));
+			.andExpect(content().string(containsString("SFR")));
 	}
  
 }
