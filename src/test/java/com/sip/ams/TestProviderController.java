@@ -20,8 +20,9 @@ public class TestProviderController {
 	public void Test_providers() throws Exception {
 			this.mockMvc.perform(get("/providers")).andExpect(status().isOk())
 			.andExpect(content().string(containsString("Samsung")))
-			.andExpect(content().string(containsString("Orange")))
-			.andExpect(content().string(containsString("SFR")));
+			.andExpect(content().string(containsString("Apple")))
+			.andExpect(content().string(containsString("Oppo")))
+			.andExpect(content().string(containsString("Huawei")));
 	}
  
 }
